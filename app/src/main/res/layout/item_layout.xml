@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    android:elevation="3dp"
+    app:cardUseCompatPadding="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cardview_bc">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imagepic"
+            android:layout_width="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name of student"
+            android:id="@+id/name"
+            android:fontFamily="@font/poppinsregular"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_toRightOf="@+id/imagepic"
+            android:layout_marginLeft="15dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Email"
+            android:fontFamily="@font/poppinsregular"
+            android:id="@+id/emailtxt"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/imagepic"
+            android:layout_below="@id/name"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Course"
+            android:id="@+id/coursetxt"
+            android:fontFamily="@font/poppinsregular"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/imagepic"
+            android:layout_below="@id/emailtxt"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/coursetxt">
+
+
+            <Button
+                android:id="@+id/editbtn"
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginLeft="95dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:text="Edit"
+                android:fontFamily="@font/poppinsregular"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/deletebtn"
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/poppinsregular"
+                android:layout_marginEnd="11dp"
+                android:padding="10dp"
+                android:text="Delete"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
